@@ -49,7 +49,7 @@ async def main():
         total_bytes = sum(size for size, _ in results)
         total_mb = total_bytes / 1024 / 1024
 
-        print(f"\nSizes: {[s for s, _ in results]}")
+        print(f"Sizes: {[s for s, _ in results]}")
         print(f"Total bytes: {total_bytes} ({total_mb:.3f} MB)")
         print(f"Total concurrent: {total_time:.4f} secs")
         print(f"Average speed: {total_mb / total_time:.2f} MB/s "
